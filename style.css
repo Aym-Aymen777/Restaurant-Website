@@ -1,0 +1,452 @@
+@keyframes transitionin{
+  from{
+  opacity: 0;
+  transform:translateY(20px);
+  
+  }
+  to{
+  opacity: 1;
+  transform: translateY(0px);
+  }
+}
+@keyframes transitionin-text{
+  from{
+  opacity: 0;
+  transform:translateX(-20px);
+  
+  }
+  to{
+  opacity: 1;
+  transform: translateX(0px);
+  }
+}
+* {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+    position:fixed;
+    width: 100%;
+    height:max-content;
+    justify-content: space-between;
+    align-items:center;
+    animation: transitionin 1s;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+  .first_page{
+    background: url(./img/meat.png) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .logo{
+    display: flex;
+}
+  .logo p{
+font-size: xx-large; 
+position: relative;
+top: 30px;
+}
+.navbar a{
+text-decoration: none;
+margin: 0 5px 0;
+color: rgb(300, 50, 0);
+}
+.search{
+    display: flex;
+    background: none;
+}
+.search input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: max-content;
+}
+.sign div{
+    width: 60px;
+    height: 1px;
+   background-color: #fff;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+animation: transitionin-text 2s;
+}
+.hero h1{
+  font-size: 100px;
+  margin-left:50px ;
+}
+.hero .p1{
+font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 120px;
+}
+.hero .p2{
+  font-size: 80px;
+}
+.hero p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+  text-wrap: wrap;
+  width: 500px;
+ padding: 20px 50px 20px;
+ border-radius: 0px 30px 30px 0px;
+}
+#scroll{
+  position: absolute;
+  top: 95vh;
+  left: 50%;
+}
+.navbar a:hover{
+  text-decoration:underline;
+  transform: scale(1.03);
+}
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:start;
+  align-items: center;
+}
+#menu1{
+  background:url(./img/menu1.jpg) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+.menu div{
+  background-color: #fff;
+  border: 1px solid rgb(7, 7, 7,0.5);
+  height: 300px;
+  width: 220px;
+  border-radius: 20px;
+  margin: 10px 0px 5px 10px;
+}
+.menu .container{
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; 
+  margin-right: 20px; 
+}
+.container p{
+  color: gray;
+  margin-left: 5px;
+  font-size: larger;
+}
+.container h3{
+  color: rgb(35, 34, 34);
+  margin-left: 5px;
+  font-size: x-large;
+}
+.container h5{
+  color: rgb(300, 69, 0);
+  margin-left: 5px;
+  font-size: x-large;
+}
+.plate1{
+  background: url(./menu/salade\ variée.jpg) no-repeat local ;
+  background-size:cover;
+}
+.plate2{
+  background: url(./menu/t.jpeg)  ;
+  background-size: cover;
+  object-fit: cover;
+}
+.plate3{
+  background: url(./menu/chaud\ pané.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate4{
+  background: url(./menu/camembert.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate5{
+  background: url(./menu/salade\ variée.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate6{
+  background: url(./menu/salade\ cesar.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate7{
+  background: url(./menu/salade\ niçoise.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate8{
+  background: url(./menu/bourek.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate9{
+  background: url(./menu/Soupe-de-poisson.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate10{
+  background: url(./menu/potage.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate11{
+  background: url(./menu/gratin\ viande.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate12{
+  background: url(./menu/gratin-de-poulet-hache.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate13{
+  background: url(./menu/gratin\ crevettes.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate14{
+  background: url(./menu/gratin\ fruit\ de\ mer.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate16{
+  background: url(./menu/spaghettis.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate17{
+  background: url(./menu/tagliatelles.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate18{
+  background: url(./menu/TAGLIATELLE\ au\ poulet.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate19{
+  background: url(./menu/tagliatelles-aux-4-fromages-et-champignons-1.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate20{
+  background: url(./menu/TAGLIATELLE\ aux\ sumon.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate21{
+  background: url(./menu/penne.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate22{
+  background: url(./menu/Blanc-de-poulet-lait-de-coco-et-curry-au-cookeo.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate23{
+  background: url(./menu/escalope\ a\ la\ creme.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate24{
+  background: url(./menu/escalope\ milanaise.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate25{
+  background: url(./menu/escalope\ grille.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate26{
+  background: url(./menu/Entrecôte-grillée-sauce-anglaise-la-recette-600x400.webp) no-repeat local;
+  background-size: cover;
+}
+.plate27{
+  background: url(./menu/filet-boeuf-au-poivre-1080x675.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate28{
+  background: url(./menu/epaul.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate29{
+  background: url(./menu/espetada.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate30{
+  background: url(./menu/cote.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate31{
+  background: url(./menu/cote\ de\ boeuf.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate32{
+  background: url(./menu/noisete\ d\'agnou.png) no-repeat local;
+  background-size: cover;
+}
+.plate33{
+  background: url(./menu/tranche.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate34{
+  background: url(./menu/tranche\ de\ foie.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate35{
+  background: url(./menu/tranche\ de\ filet.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate36{
+  background: url(./menu/Entrecôte-grillée-sauce-anglaise-la-recette-600x400.webp) no-repeat local;
+  background-size: cover;
+}
+.plate37{
+  background: url(./menu/crevette.jpg) no-repeat local;
+  background-size: cover;
+}
+.plate38{
+  background: url(./menu/espadon.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate39{
+  background: url(./menu/merlan.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate40{
+  background: url(./menu/dorade.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate41{
+  background: url(./menu/rouget.jpeg) no-repeat local;
+  background-size: cover;
+}
+.plate42{
+  background: url(./menu/saumon.jpeg) no-repeat local;
+  background-size: cover
+}
+.title{
+  color: #fff;
+  background:none;
+}
+.lign{
+  width: 100%;
+  height: 2px;
+  color: #fff;
+  background-color: #fff;
+}
+#menu2{
+  background:url(./img/menu2.jpg) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+#menu3{
+  background:url(./img/menu3.jpeg) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+#menu4{
+  background:url(./img/menu4.webp) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+#menu5{
+  background:url(./img/meat2.webp) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+#menu6{
+  background:url(./img/menu5.jpeg) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+#menu7{
+  background:url(./img/menu6.jpg) fixed no-repeat,linear-gradient(to bottom,black,rgb(45, 43, 43),rgb(77, 73, 73));
+  background-size: cover;
+}
+.container2 .container3 {
+  background:linear-gradient(to bottom,rgb(236, 235, 235),rgb(220, 217, 217),white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table {
+  font-weight: bold;
+  color: black;
+}
+
+.container2 input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: rgb(5, 5, 5);
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #0e0e0e;
+}
+
+th {
+  background-color: #0e0e0e;
+  color: #fff;
+}
+#reservation{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background:linear-gradient(to bottom,rgb(236, 235, 235),rgb(220, 217, 217),white);
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact h3{
+  font-family: 'Courier New', Courier, monospace;
+}
+.contact p{
+  width: 60%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lign2{
+  width: 200px;
+  height:1px;
+  background-color: #fff;
+}
+.contact a{
+  margin: 20px 15px 20px;
+}
